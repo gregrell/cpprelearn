@@ -18,6 +18,7 @@ int main(){
     double b;
     char op;
     double result;
+    bool err=false;
 
     std::cout << "Enter first number:";
     std::cin >> a;
@@ -32,17 +33,14 @@ int main(){
         case '+':
             result = a+b;
             break;
-         case '-':
+        case '-':
             result = a-b;
-            break;    
+            break;
+        default:
+            std::cout << "Not Valid Operation\n";
+            err=true;
     }
     
-    std::cout << "Result:  " << result;
-
-
-
-
-
-
+    err ? std::cout << "Erorr" : std::cout << "Result:  " << result;
     return 0;
 }
