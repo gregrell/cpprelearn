@@ -14,26 +14,35 @@ using myotherstring_t = std::string; // this is preferred instead of typedefs be
 
 int main(){
 
-    //practice to calculate hypotenuse of a right triangle
-    // hypotenuse = sqrt(side_a^2 + side_b^2)
-    double side_a = 0;
-    double side_b = 0;
-    std::cout << "Enter len side A:";
-    std::cin >> side_a;
-    std::cout << "Enter len side B:";
-    std::cin >> side_b;
+    double a;
+    double b;
+    char op;
+    double result;
 
-    double hypotenuse = sqrt(pow(side_a, 2) + pow(side_b, 2));
+    std::cout << "Enter first number:";
+    std::cin >> a;
+    std::cout << "Enter operator:";
+    std::cin >> op;
+    std::cout << "Enter second number:";
+    std::cin >> b;
+    
+    std::cout << "Evaluating " << a << op << b << "\n\n";
 
-    std::cout << "Hypotenuse is :" << hypotenuse;
-    
-    if(hypotenuse > 10){
-        std::cout << "\nwoah that's big";
+    switch(op){
+        case '+':
+            result = a+b;
+            break;
+         case '-':
+            result = a-b;
+            break;    
     }
-    else{
-        //nothing to do
-    }
     
+    std::cout << "Result:  " << result;
+
+
+
+
+
 
     return 0;
 }
