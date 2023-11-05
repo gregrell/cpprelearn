@@ -27,6 +27,13 @@ int main(){
 
     std::cout << "Hypotenuse is :" << hypotenuse;
     
+    if(hypotenuse > 10){
+        std::cout << "\nwoah that's big";
+    }
+    else{
+        //nothing to do
+    }
+    
 
     return 0;
 }
