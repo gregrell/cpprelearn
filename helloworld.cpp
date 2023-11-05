@@ -10,7 +10,7 @@ namespace two{
 }
 
 typedef std::string mystring_t;
-using myotherstring_t = std::string; // this is preferred instead of typedefs because of tempaltes
+using myotherstring_t = std::string; // this is preferred instead of typedefs because of templates
 
 int main(){
 
@@ -26,12 +26,6 @@ int main(){
     double hypotenuse = sqrt(pow(side_a, 2) + pow(side_b, 2));
 
     std::cout << "Hypotenuse is :" << hypotenuse;
-    
-
-    
-
-    
-
     
 
     return 0;
