@@ -15,31 +15,12 @@ using myotherstring_t = std::string; // this is preferred instead of typedefs be
 
 int main(){
     system("clear");
-    char unit;
-    double inTemp;
-    double convertedTemp;
+    std::string name;
+    std::cout << "Enter your name:";
+    std::getline(std::cin,name);
 
-    std::cout << "*****  Temp conversion *****\n";
-    std::cout << "Enter the unit to convert from:";    
-    std::cin >> unit;
-    std::cout << "Enter the temperature:\n";    
-    std::cin >> inTemp;
-
-    if(unit == 'f' || unit == 'F'){
-        //convert F to C
-        convertedTemp = (inTemp-32)/1.8;
-        std::cout << inTemp << "F = " << convertedTemp << " C\n";
-    }
-    else if(unit =='c'|| unit=='C'){
-        //convert C to F
-        convertedTemp = (1.8 * inTemp) + 32;
-        std::cout << inTemp << "C = " << convertedTemp << " F\n";
-
-    }
-
-
-    std::cout << "****************************";
-
+    std::cout << name.length() << name.append(" piss ass");
+ 
    
     return 0;
 }
